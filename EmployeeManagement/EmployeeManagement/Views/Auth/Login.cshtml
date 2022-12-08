@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+  <section class="mt-lg-5">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center shadow py-5">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="~/img/login.svg"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form>
+            <div>
+                <p class="fs-1">Login</p>
+            </div>
+         <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+         </div>
+           <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Password">
+           </div>
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <a type="button" class="btn btn-primary btn-md" asp-action="MainPage" asp-controller="Auth" 
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">
+             Login
+          </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

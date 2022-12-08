@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "MainPage";
+}
+<div>
+<div class="border-bottom py-2">
+  <div class="row align-items-center">
+    <div class="col">
+      <img src="~/img/login.svg" class="w-75"/>
+    </div>
+    <div class="col">
+      <p class="text-uppercase fs-1 fw-bolder fst-italic">welcome to <span class="text-primary">employee management system</span></p>
+    </div>
+  </div>
+  </div>
+  <div class="my-4">
+      <div class="row">
+          <div class="col">
+          <div class=" position-relative shadow-sm w-full rounded border border-primary">
+          <div class="text-center d-flex flex-column justify-content-center align-items-center ">
+          <img src="~/img/employee.png" class="logo xs:h-10 py-2 " />
+          </div>
+          <div class="text-center d-flex flex-column align-items-center justify-content-center ">
+            <p class="fw-bold m-0 p-0">200</p>
+            <p class="fs-6">Total Employee</p>
+          </div>
+      </div>
+          </div>
+            <div class="col">
+                <div class=" position-relative shadow-sm w-full rounded border border-secondary">
+          <div class="text-center d-flex flex-column justify-content-center align-items-center ">
+          <img src="~/img/employee.png" class="logo xs:h-10 py-2 " />
+          </div>
+          <div class="text-center d-flex flex-column align-items-center justify-content-center ">
+            <p class="fw-bold m-0 p-0">200</p>
+            <p class="fs-6">Total Departments</p>
+          </div>
+      </div>
+          </div>
+            <div class="col">
+                <div class=" position-relative shadow-sm w-full rounded border border-success">
+          <div class="text-center d-flex flex-column justify-content-center align-items-center ">
+          <img src="~/img/employee.png" class="logo xs:h-10 py-2 " />
+          </div>
+          <div class="text-center d-flex flex-column align-items-center justify-content-center ">
+            <p class="fw-bold m-0 p-0">200</p>
+            <p class="fs-6">Total Female</p>
+          </div>
+      </div>
+          </div>
+            <div class="col">
+                <div class=" position-relative shadow-sm w-full rounded border border-danger">
+          <div class="text-center d-flex flex-column justify-content-center align-items-center ">
+          <img src="~/img/employee.png" class="logo xs:h-10 py-2 " />
+          </div>
+          <div class="text-center d-flex flex-column align-items-center justify-content-center ">
+            <p class="fw-bold m-0 p-0">200</p>
+            <p class="fs-6">Total Male</p>
+          </div>
+      </div>
+          </div>
+      </div>
+  </div>
+  <div id="features">
+    <div class="d-flex flex-column align-items-center justify-content-center pb-4 pt-4">
+        <p class="m-0 px-4 fw-bolder fs-4">EMS Features</p>
+        <p class="m-0 p-0 text-primary">Click on EMS features!!</p>
+    </div>
+    <div>
+        <div class="">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-3">
+                 <div>
+              <div class="change cursor-pointer p-2 border border-primary rounded-xl h-36 shadow-lg transition-all  delay-100  text-center flex items-center justify-center ">
+                <a asp-action="Create" asp-controller="Auth">
+                  <img src='/img/create.png' class="feature" />
+                </a>
+              </div>
+              <p class="text-center pt-4  fw-bold text-black-700 capitalize">
+                Create Employee
+              </p>
+            </div>
+                </div>
+                 <div class="col-3">
+                   <div>
+                     <div class=" change cursor-pointer p-2 border border-primary rounded-xl h-36 shadow-lg transition-all  delay-100  text-center flex items-center justify-center ">
+                <a asp-action="Display" asp-controller="Auth">
+                  <img src='/img/users1.png' class="features" />
+                </a>
+              </div>
+              <p class="text-center pt-4  fw-bold text-black-700 capitalize">
+                Display Employee
+              </p>
+            </div>
+                </div>
+                   <div class="col-3">
+                      <div>
+                      <div class="change cursor-pointer p-2 border border-primary rounded-xl h-36 shadow-lg transition-all  delay-100  text-center flex items-center justify-center ">
+                <a asp-action="Details" asp-controller="Auth">
+                  <img src='/img/totals.png' class="feature" />
+                </a>
+              </div>
+              <p class="text-center pt-4  fw-bold text-black-700 capitalize">
+                Details of Employee
+              </p>
+            </div>
+                </div>
+                     <div class="col-3">
+                      <div>
+                      <div class=" change cursor-pointer p-2 border border-primary rounded-xl h-36 shadow-lg transition-all  delay-100  text-center flex items-center justify-center ">
+                <a asp-action="Departments" asp-controller="Auth">
+                  <img src='/img/departments.png' class="feature" />
+                </a>
+              </div>
+              <p class="text-center pt-4  fw-bold text-black-700 capitalize">
+                Total Departments
+              </p>
+            </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+  </div>

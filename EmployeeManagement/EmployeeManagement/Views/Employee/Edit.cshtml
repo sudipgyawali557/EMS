@@ -1,0 +1,96 @@
+﻿@model EmployeeManagement.Models.EmployeeModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4 class="py-4">Edit Employee</h4>
+<div class="container-fluid">
+        <form asp-action="Edit" class="shadow mb-5 p-4 bg-white rounded">
+<div class="row">
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="address" class="control-label"></label>
+                <input asp-for="address" class="form-control" />
+                <span asp-validation-for="address" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="department" class="control-label"></label>
+                <input asp-for="department" class="form-control" />
+                <span asp-validation-for="department" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="designation" class="control-label"></label>
+                <input asp-for="designation" class="form-control" />
+                <span asp-validation-for="designation" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="dob" class="control-label"></label>
+                <input asp-for="dob" class="form-control" />
+                <span asp-validation-for="dob" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="gender" class="control-label"></label>
+                <input asp-for="gender" class="form-control" />
+                <span asp-validation-for="gender" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="doj" class="control-label"></label>
+                <input asp-for="doj" class="form-control" />
+                <span asp-validation-for="doj" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="salary" class="control-label"></label>
+                <input asp-for="salary" class="form-control" />
+                <span asp-validation-for="salary" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            </div>
+    <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="country" class="control-label"></label>
+                <input asp-for="country" class="form-control" />
+                <span asp-validation-for="country" class="text-danger"></span>
+            </div>
+            </div>
+</div>
+<div class="form-group my-4 d-flex flex-row-reverse">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+</div>
+<div class="px-6">
+    <a asp-action="Index" class="px-4">Back to List</a>
+</div>
+
